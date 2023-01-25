@@ -1,0 +1,42 @@
+$black: #222222;
+$gray: #777777;
+$lightBlack: #555555;
+$blue: #384aeb;
+
+.btn{
+    padding: 12px 41px;
+    border: 1px solid #384aeb;
+    border-radius: 30px;
+    color: #222;
+    font-weight: 500;
+    padding: 12px 50px;
+    background: #384aeb;
+    color: #fff;
+    transition: all .4s ease;
+    cursor: pointer;
+
+    &:hover{
+        border: 1px solid #eee;
+        color: $black;
+        background: white;
+    }
+}
+
+.subtitle{
+    font-size: 15px;
+    color: $gray;
+    margin-bottom: 3px;
+}
+
+.title{
+    font-size: 36px;
+    color: $black;
+    margin-bottom: 8px;
+
+    span{
+        font-size: 36px;
+        color: $black;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $blue;
+    }
+}

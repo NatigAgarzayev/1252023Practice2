@@ -1,0 +1,33 @@
+@import '../../../main.scss';
+
+.sale {
+    padding: 120px 0;
+    background: url('../../../images/sale.webp') no-repeat center top / cover;
+
+    &__body {
+        max-width: 445px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 50px;
+        margin-bottom: 25px;
+        color: $black;
+    }
+
+    &__name {
+        font-size: 30px;
+        color: $black;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: $lightBlack;
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+}

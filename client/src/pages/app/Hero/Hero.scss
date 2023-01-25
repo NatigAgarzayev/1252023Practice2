@@ -1,0 +1,57 @@
+@import '../../../main.scss';
+
+.hero {
+    background: linear-gradient(to right, $blue 40%, #F1F6F7 40%);
+
+    &__body {
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        @media (max-width: 767px){
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__image {
+        img{
+            @media (max-width: 767px){
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__content {
+        max-width: 495px;
+        @media (max-width: 767px){
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        color: $lightBlack;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        font-size: 50px;
+        color: $black;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: $gray;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        max-width: fit-content;
+    }
+}

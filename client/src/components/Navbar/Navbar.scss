@@ -1,0 +1,93 @@
+@import '../../main.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  .container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+
+.navbar {
+    padding: 20px 0;
+    z-index: 9999;
+    box-shadow: 0px 10px 27px 3px rgb(221 221 221 / 30%);
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.logo {
+  @media (max-width: 767px){
+    flex: 0 0 35px;
+    overflow: hidden;
+  }
+}
+.list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: 767px){
+      gap: 10px;
+    }
+		&__item {
+		}
+
+		&__link {
+            color: $black;
+            transition: all 0.3s ease;
+            
+            &:hover{
+                color: $blue;
+
+            }
+		}
+}
+.payment {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @media (max-width: 767px){
+      display: none;
+    }
+
+		&__icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+		}
+
+		&__icons-item {
+            font-size: 18px;
+		}
+
+		&__button {
+            font-size: 15px;
+            font-weight: 700;
+            padding: 10px 45px;
+            background: transparent;
+            color: black;
+            border: 1px solid #EEEEEE;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            &:hover{
+                border: 1px solid $blue;
+            }
+		}
+}
